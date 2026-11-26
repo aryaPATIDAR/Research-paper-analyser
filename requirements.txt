@@ -1,0 +1,24 @@
+# Core API
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# PDF Processing
+pdfplumber>=0.10.0
+PyMuPDF>=1.23.0
+pdfminer.six>=20221105
+# Optional OCR for scanned PDFs (also needs the Tesseract and Poppler programs)
+pdf2image>=1.16.0
+pytesseract>=0.3.10
+
+# ML & NLP
+# No upper bound on numpy: numpy 1.x has no wheels for Python 3.13+, so the
+# old "<2.0.0" pin forced a source build (or failed) on current Python.
+numpy>=1.24.0
+scikit-learn>=1.3.0
+scipy>=1.11.0
+
+# APIs & Utils
+google-genai>=1.0.0
+python-dotenv>=1.0.0
+requests>=2.31.0
